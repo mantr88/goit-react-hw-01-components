@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 export const Statistics = ({ title, stats }) => {
-  return (<section class="statistics">
+  return (
+    <section class="statistics">
     {title && <h2 class="title">{title}</h2>}
     <ul class="stat-list">{
       stats.map((stat) => (
