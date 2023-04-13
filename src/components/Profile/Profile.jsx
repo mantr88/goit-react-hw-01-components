@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css'
+import { Container, Card, Stats } from './Profile.styled';
 export const Profile = ({ username, tag, location, avatar, stats: { followers, views, likes } }) => {
     return (
-        <div className={css.profile}>
-  <div className={css.description}>
+        <Container>
+  <Card className={css.description}>
     <img
       src={avatar}
       alt={username}
@@ -12,9 +13,9 @@ export const Profile = ({ username, tag, location, avatar, stats: { followers, v
     <p className="name">{username}</p>
     <p className="tag">{tag}</p>
     <p className="location">{location}</p>
-  </div>
+  </Card>
 
-  <ul className="stats">
+  <Stats className="stats">
     <li>
       <span className="label">Followers</span>
       <span className="quantity">{followers}</span>
@@ -27,8 +28,8 @@ export const Profile = ({ username, tag, location, avatar, stats: { followers, v
       <span className="label">Likes</span>
       <span className="quantity">{likes}</span>
     </li>
-  </ul>
-</div> 
+  </Stats>
+</Container> 
     );
 };
 
