@@ -32,18 +32,18 @@ export const StatsListItem = styled.li`
         padding: 15px 0;
         background-color: ${p => {
             switch (p.number) {
-            case "id-1":
-                return "rgb(250, 128, 114)";
-            case "id-2":
-            return "rgb(32, 178, 170)";
-            case "id-3":
-                return "rgb(70, 130, 180)";
-            case "id-4":
-            return "rgb(218, 165, 32)";
-            case "id-5":
-            return "rgb(238, 130, 238)";
-            default:
-                throw new Error(`Unknown error of ${p.number}`);
+                case "id-1":
+                    return "rgb(250, 128, 114)";
+                case "id-2":
+                    return "rgb(32, 178, 170)";
+                case "id-3":
+                    return "rgb(70, 130, 180)";
+                case "id-4":
+                    return "rgb(218, 165, 32)";
+                case "id-5":
+                    return "rgb(238, 130, 238)";
+                default:
+                    throw new Error(`Unknown error of ${p.number}`);
             }
         }
         };

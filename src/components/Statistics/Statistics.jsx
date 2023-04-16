@@ -17,11 +17,12 @@ export const Statistics = ({ title, stats }) => {
   </Container>);
 };
 
-// Statistics.propTypes = PropTypes.shape({
-//   title: PropTypes.string.isRequired,
-//   stats: PropTypes.arrayOf(PropTypes.shape({
-//     label: PropTypes.string.isRequired,
-//     id: PropTypes.string.isRequired,
-//     percentage: PropTypes.number.isRequired,
-//   }))
-// }); 
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired
+  )
+};
