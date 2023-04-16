@@ -1,23 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-    text-align: center;
+    margin: 20px auto;
+    padding: 20px 10px;
     font-size: 18px;
     font-weight: 600;
-    max-width: 515px;
 
-    background-color: rgb(201,189,194);;
-    
+    background-color: rgb(201,189,194);
+    border-radius: 15px;
 `;
 
 export const Card = styled.div`
-    border: 2px solid black;
+
+    img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
 
     p{
         margin-bottom: 15px;
@@ -26,25 +29,18 @@ export const Card = styled.div`
 
 export const Stats = styled.div`
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     width: 100%;
-    margin: 0;
-
-    border: 2px solid black;
-    padding: 15px;
-    gap: 20px;
-    background-color: #e9d9e0;
+    padding: 10px;
     
-    li{
+   li{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        min-width: 110px;
-        /* border: 1px solid; */
-    }
+        flex-basis: calc((100%-10px)/3);
+    } 
 
     span {
-        padding: 15px;
+        padding: 10px;
     }
 
 `;

@@ -29,4 +29,9 @@ ul, ol{
     padding: 0;
     list-style: none;
 }
+
+li {
+    list-style: none;
+}
+
 `;

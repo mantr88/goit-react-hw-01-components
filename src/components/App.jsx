@@ -10,11 +10,12 @@ import { FriendList } from "./FriendList/FriendList";
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
 //import for styles
 import { GlobalStyle } from './GlobalStyle';
+import { AppContainer } from './App.styled';
 
 export const App = () => {
   return (
   
-    <>
+    <AppContainer>
       <GlobalStyle/>
       <Profile
         username={user.username}
@@ -29,6 +30,6 @@ export const App = () => {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-      </>
+      </AppContainer>
   );
 };

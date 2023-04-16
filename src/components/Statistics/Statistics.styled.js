@@ -4,7 +4,7 @@ export const Container = styled.section`
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 25px;
-    max-width: 515px;
+    max-width: 415px;
     background-color: #fff;
     text-align: center;
     font-size: 18px;
@@ -32,23 +32,5 @@ export const TitleStats = styled.h2`
 // }});
     
 export const StatsList = styled.ul`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 3px;
-    font-weight: 600;
-
-    li{
-        display: flex;
-        flex-direction: column;
-        min-width: 100px;
-        padding: 15px 0;
-        /* background-color: ; */
-
-        border: 2px solid;
-
-        span:first-child{
-            margin-bottom: 10px;
-        }        
-    }
+    
 `;

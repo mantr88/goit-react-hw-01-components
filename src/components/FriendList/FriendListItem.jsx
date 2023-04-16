@@ -3,7 +3,7 @@ import { FriendsListItem } from './FriendList.styled';
 export const FriendListItem = ({ friend }) => {
     const { isOnline, id, name, avatar } = friend;
     return (
-        <FriendsListItem type={isOnline? "online":"offline"} key={id}>
+        <FriendsListItem type={isOnline? "online":"offline"}>
             <span>{isOnline?'online':'offline'}</span>
             <img src={avatar} alt={name} width="240" />
             <p>{name}</p>

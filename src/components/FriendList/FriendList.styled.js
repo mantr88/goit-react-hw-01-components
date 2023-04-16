@@ -11,7 +11,7 @@ export const List = styled.ul`
     
 `;
 
-export const FriendsListItem = styled.li`
+export const FriendsListItem = styled.div`
 display: flex;
 flex-direction: column;
 padding: 10px;
